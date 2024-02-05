@@ -9,3 +9,4 @@ I am feeling happy 😊
 """
 )
 print("You can follow my progress at replit.com/@carlaclefig")
+print("👍")
