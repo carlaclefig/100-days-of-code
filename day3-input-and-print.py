@@ -1,8 +1,0 @@
-nameFood = input("Name a food:")
-namePlant = input("Name a type of plant:")
-nameCook = input("Name a method of cooking:")
-nameBurn = input("What word describes burned food?:")
-nameItem = input("Name a DIY item:")
-print()
-print("MENU")
-print(nameCook, nameFood, "with", nameBurn, namePlant, "on a bed of", nameItem)
