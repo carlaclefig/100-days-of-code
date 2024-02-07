@@ -1,6 +1,7 @@
-# float so that the code can read decimal numbers according to the conditional
-myPi = float(input("What is Pi to 3dp?"))
-if myPi == 3.142:
-    print("Exactly!")
-else:
-    print("Try again 😞")
+print("Generation Identifier")
+print()
+year = int(input("Which year were you born?"))
+if year < 1990:
+    print("Hah, Lost Generation!")
+elif year == 1901:
+    print("Hah, Greatest Generation!")
