@@ -1,6 +1,6 @@
 print("100 Days of Code QUIZ")
 print()
-print("How many can you answer correctly?)
+print("How many can you answer correctly? ") # first error
 ans1 = ("What language are we writing in?")
 if ans1 == "python":
   print("Correct")
