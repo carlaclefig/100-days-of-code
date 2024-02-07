@@ -6,7 +6,7 @@ if ans1 == "python":
   print("Correct")
 else:
   print("Nope 🙈") # third error 
-ans2 = input("Which lesson number is this? ")
+ans2 = int(input("Which lesson number is this? ")) # 4to error
 if ans2 > 12: 
 print("We're not quite that far yet")
 else:
