@@ -1,6 +1,6 @@
-# int so that the code can read integers according to the conditional
-myScore = int(input("Your score:"))
-if myScore > 100000:
-    print("Winner!")
+# float so that the code can read decimal numbers according to the conditional
+myPi = float(input("What is Pi to 3dp?"))
+if myPi == 3.142:
+    print("Exactly!")
 else:
-    print("Try again 😭")
+    print("Try again 😞")
