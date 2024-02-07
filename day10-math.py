@@ -1,22 +1,8 @@
-adding = 4 + 3
-print(adding)
-
-subtraction = 8 - 9
-print(subtraction)
-
-multiplication = 4 * 32
-print(multiplication)
-
-division = 50 / 5
-print(division)
-
-squared = 6**2  # exponents the 1st number raised to the 2nd number
-print(squared)
-
-modulo = (
-    45 % 2
-)  # 1er number es el dividend y el 2do es el divisor, el result is the residue
-print(modulo)
-
-divisor = 20 // 5  # 1er number es el dividend y el 2do es el quotient
-print(divisor)
+# float, identifies the decimal number that the user enters
+myBill = float(input("What was the bill?:"))
+# int, Identifies the integer number that the user enters.
+numberPeople = int(input("How many people?:"))
+answer = myBill / numberPeople
+# round, shows the result only with the requested number of decimal places
+answer = round(answer, 2)
+print("You all owe", answer)
