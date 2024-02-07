@@ -7,9 +7,9 @@ if ans1 == "python":
 else:
   print("Nope 🙈") # third error 
 ans2 = int(input("Which lesson number is this? ")) # 4to error
-if ans2 > 12: 
+if ans2 > 12: # 5to error
 print("We're not quite that far yet")
 else:
   print("We've gone well past that!")
-elif(ans2==12):
+elif ans2 == 12: # 6to error
   print("That's right!")
