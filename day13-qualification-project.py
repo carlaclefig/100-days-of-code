@@ -7,7 +7,7 @@ score = float(input("Your score: "))
 pretotal = score / Maxscore
 total = round((pretotal * 100), 2)
 
-if total <= 100 and total >= 90:
+if total >= 90:
     print("You got", total, "% which is a A+")
 elif total <= 89 and total >= 80:
     print("You got", total, "% which is a A-")
