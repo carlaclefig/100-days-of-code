@@ -3,7 +3,12 @@ print()
 name = input("Who are you?")
 password = input("Password =")
 # or to insert answers with upper or lower case that will be accepted
-if name == "David" or name == "david" and password == "StudentDavid":
+if (
+    name == "David"
+    and password == "StudentDavid"
+    or name == "david"
+    and password == "StudentDavid"
+):
     print("Hi", name, "welcome!")
     input("How we woke up?")
     print()
