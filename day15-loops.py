@@ -12,3 +12,20 @@ exit = ""
 while exit != "yes":
     print("🤩")
     exit = input("Exit?: ")
+print()
+print()
+print("Animal Farm")
+exit = "no"
+while exit == "no":
+    animal = input("What animal do you want? ")
+    if animal == "Dog" or animal == "dog":
+        print("The", animal, "makes the woof sound")
+    elif animal == "Cat" or animal == "cat":
+        print("The", animal, "makes the meow sound")
+    elif animal == "Cow" or animal == "cow":
+        print("The", animal, "makes the mooo sound")
+    elif animal == "Frog" or animal == "frog":
+        print("The", animal, "makes the croac sound")
+    else:
+        print("Oops, we don't have that animal.")
+    exit = input("Do you want to exit? ")
