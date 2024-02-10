@@ -9,3 +9,5 @@ counter = 0
 while True:
     answer = int(("Enter a number: "))
     print("Adding it up")
+    # counter = counter + answer:
+    counter += answer
