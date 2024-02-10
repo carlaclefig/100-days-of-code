@@ -16,3 +16,13 @@ while True:
     if another == "no":
         break
 print("Bye!")
+
+print("Fill-in the blank Lyrics!")
+print("Type in the blank lyrics, see if ")
+print()
+while True:
+    print("Never going to____you up")
+    again = input(": ")
+    if again == "give":
+        break
+print("Well done")
