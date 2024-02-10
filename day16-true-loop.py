@@ -4,3 +4,8 @@ while True:
     if again == "no":
         break
 print("Aww, i was having a good time 😭")
+
+counter = 0
+while True:
+    answer = int(("Enter a number: "))
+    print("Adding it up")
