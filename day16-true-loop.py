@@ -10,5 +10,7 @@ while True:
     else:
         print("Nope, try again.")
         counter += 1
+        print()
+print()
 print("Well done.")
-print("You got the correct lyrics in", counter, "attempt(s)")
+print("You got the correct lyrics in", counter, "attempt(s).")
