@@ -1,12 +1,12 @@
-print(" M O R E   E P I C 🪨  📄  ✂️  B A T T L E")
-print()
+# \n create a space line after this
+print(" M O R E   E P I C 🪨  📄  ✂️  B A T T L E\n")
 print("🪨   Rock: R")
 print("📄   Paper: P")
 print("✂️   Scissors: S")
 score1 = 0
 score2 = 0
 Round = 0
-print("Select your move (R, P or S)")
+print("Select your move (R, P or S)\n")
 while True:
     Round = Round + 1
     print("Round", Round)
@@ -22,6 +22,7 @@ while True:
     ):
         print("Player 1's wins with his", player1, "against Player 2 whit his", player2)
         score1 += 1
+        print()
     elif (
         player2 == "R"
         and player1 == "S"
@@ -43,7 +44,7 @@ while True:
     ):
         print("Oh, there was a tie.\n")
     else:
-        ("This play is invalid!")
+        print("This play is invalid!\n")
 
     if score1 == 3 or score2 == 3:
         print("Player 1 has", score1, "victories")
