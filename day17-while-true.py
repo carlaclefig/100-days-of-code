@@ -1,26 +1,15 @@
-while True:
-    print("You are in a corridor, do you go left or right?")
-    direction = input("> ")
-    if direction == "left":
-        print("You have fallen to your death.")
-        break
-    elif direction == "right":
-        continue
-    else:
-        print("Ahh! You're a genius, you've won")
-        exit()
-print("The game is over, you've failed!")
-
-
 print(" M O R E   E P I C 🪨  📄  ✂️  B A T T L E")
 print()
 print("🪨   Rock: R")
 print("📄   Paper: P")
 print("✂️   Scissors: S")
-counter = 1
+score1 = 0
+score2 = 0
+Round = 0
+print("Select your move (R, P or S)")
 while True:
-    print("Round", counter)
-    print("Select your move (R, P or S)")
+    Round = Round + 1
+    print("Round", Round)
     player1 = input("Player 1 > ")
     player2 = input("Player 2 > ")
     if (
@@ -32,6 +21,7 @@ while True:
         and player2 == "R"
     ):
         print("Player 1's wins with his", player1, "against Player 2 whit his", player2)
+        score1 += 1
     elif (
         player2 == "R"
         and player1 == "S"
@@ -41,9 +31,22 @@ while True:
         and player1 == "R"
     ):
         print("Player 2's wins with his", player2, "against Player 1 whit his", player1)
-        continue
+        score2 += 1
+        print()
+    elif (
+        player2 == "R"
+        and player1 == "R"
+        or player2 == "S"
+        and player1 == "S"
+        or player2 == "P"
+        and player1 == "P"
+    ):
+        print("Oh, there was a tie.\n")
     else:
-        print("oh, there was a tie.")
-        counter += 1
+        ("This play is invalid!")
+
+    if score1 == 3 or score2 == 3:
+        print("Player 1 has", score1, "victories")
+        print("Player 2 has", score2, "victories")
+        print("Thanks for playing!")
         exit()
-    print("Player1 wins with", counter, "victories")
