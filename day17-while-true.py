@@ -20,9 +20,14 @@ while True:
         or player1 == "P"
         and player2 == "R"
     ):
-        print("Player 1's wins with his", player1, "against Player 2 whit his", player2)
+        print(
+            "Player 1's wins with his",
+            player1,
+            "against Player 2 whit his",
+            player2,
+            "\n",  # "\n" with "" when there is a variable
+        )
         score1 += 1
-        print()
     elif (
         player2 == "R"
         and player1 == "S"
