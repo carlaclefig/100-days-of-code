@@ -16,3 +16,6 @@ total = 0
 for number in range(10):
     total += number
     print(total)
+
+for days in range(7):
+    print("Day", days + 1)
