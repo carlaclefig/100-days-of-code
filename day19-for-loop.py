@@ -19,3 +19,17 @@ for number in range(10):
 
 for days in range(7):
     print("Day", days + 1)
+
+
+print("Loan Calculator\n")
+print("$1000 over 10 years at 5% APR\n")
+total = 1000
+apr = 0.05
+int_pain = 0
+for i in range(10):
+    int = total * apr
+    total += int
+    int_pain += int
+    print("Year", i + 1, "is", round(total, 2))
+print()
+print("You paid $", round(int_pain, 2), "in interest!")
