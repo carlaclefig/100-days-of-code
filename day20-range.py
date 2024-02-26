@@ -10,3 +10,7 @@ for i in range(1, 8):
 print("Thirteen times table")
 for i in range(1, 13):
     print(i, "x 13 =", i * 13)
+
+# range from 0 to 99, summed from 20 by 20
+for i in range(0, 100, 20):
+    print(i)
