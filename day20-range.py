@@ -17,3 +17,12 @@ for i in range(0, 100, 20):
 # range from 10 to 0, subtracting from -2 by -2
 for i in range(10, -1, -2):
     print(i)
+
+
+print("List generator\n")
+number_start = int(input("Start at: "))
+number_end = int(input("End before: "))
+interval = int(input("Increment between values: "))
+print()
+for i in range(number_start, number_end, interval):
+    print(i)
