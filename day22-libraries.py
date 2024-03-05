@@ -1,4 +1,5 @@
 import random
 
-number = random.randint(1, 100)
-print(number)
+for i in range(10):
+    number = random.randint(1, 100)
+    print(number)
