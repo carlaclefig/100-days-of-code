@@ -7,12 +7,12 @@ for number in range(1, 11):
 
     correct_answer = int(input("> "))
     if correct_answer == correct:
-        print("Great work")
+        print("Great work \n")
         score += 1
     else:
-        print("Nope. The answer was", correct)
+        print("Nope. The answer was", correct, "\n")
 
-    if score == 10:
-        print("Wow! A perfect score! 🥳", score)
-    else:
-        print("You scored", score, "out of 10")
+if score == 10:
+    print("Wow! A perfect score! 🥳", score)
+else:
+    print("You scored", score, "out of 10")
