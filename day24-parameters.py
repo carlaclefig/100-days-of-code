@@ -17,4 +17,9 @@ def which_cake(ingredient, base, coating):
         )
 
 
+user_ingredient = input("Name an ingredient: ")
+user_base = input("Name a type of base: ")
+user_coating = input("Fave cake topping: ")
+
+
 which_cake("carrot", "biscuit", "icing")
