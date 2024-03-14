@@ -22,4 +22,4 @@ user_base = input("Name a type of base: ")
 user_coating = input("Fave cake topping: ")
 
 
-which_cake("carrot", "biscuit", "icing")
+which_cake(user_ingredient, user_base, user_coating)
