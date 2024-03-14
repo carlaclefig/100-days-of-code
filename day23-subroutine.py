@@ -6,7 +6,7 @@ def rollDice():
     print("You rolled", dice)
 
 
-for i in range(10):
+for i in range(5):
     # Note that when you call the subroutine, you need to ensure you do NOT indent.
     rollDice()
 
@@ -24,3 +24,21 @@ def countToFive():
 
 
 countToFive()
+
+
+print("REPLIT LOGIN SYSTEM\n")
+
+
+def login():
+    for i in range(5):
+        username = input("What is your username: ")
+        password = input("What is you password: ")
+        if username == "David" and password == "baldies4life":
+            print("Welcome to REPLIT.\n")
+            break
+        else:
+            print("Whops! I don't recognize that username or password, try again.\n")
+            continue
+
+
+login()
