@@ -1,6 +1,6 @@
 # subroutine has parameter called `number`
 # `number` shows how many numbers we want the pin to have
-def pinPicker(number):
+def pin_picker(number):
     import random
 
     pin = ""  # this is the empty string
@@ -11,5 +11,16 @@ def pinPicker(number):
     return pin
 
 
-pin = pinPicker(4)  # 4 means we want 4 random numbers
-print(pin)
+pin = pin_picker(4)  # 4 means we want 4 random numbers
+print(pin, "\n")
+
+print("AREA OF TRIANGLE")
+
+
+def area_of_triangle(base, height):
+    area = 0.5 * base * height
+    return area
+
+
+area = area_of_triangle(8, 22)
+print(area, "\n")
