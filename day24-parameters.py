@@ -57,3 +57,33 @@ def pizza_order(topping1, topping2):
 
 pizza_order(topping1, topping2)
 print()
+
+print("INFINITY DICE 🎲")
+sides = int(input("How many sides?: "))
+import random
+
+number = random.randint(1, sides)
+print("You rolled", number, "\n")
+while True:
+    number = random.randint(1, sides)
+    roll = input("Roll again? ")
+    if roll == "yes":
+        print("You rolled", number, "\n")
+    else:
+        break
+
+print("INFINITY DICE 🎲 \n")
+sides = int(input("How many sides?: "))
+import random
+
+played = "yes"
+
+
+def roll(sides):
+    number = random.randint(1, sides)
+    print("You rolled", number, "\n")
+
+
+while played == "yes":
+    roll(sides)
+    played = input("Roll again? ")
