@@ -1,3 +1,4 @@
+# ---------------------------------- Example 01 ---------------------------------------
 # In a subroutine, the () are for the argument (FYI argument is another word for parameter). These are the pieces of information we pass to the code. These can be variable names that are made up for the first time within the argument ().
 print("INGREDIENTS FOR A CAKE")
 
@@ -28,6 +29,7 @@ def which_cake(ingredient, base, coating):
 which_cake(user_ingredient, user_base, user_coating)
 print()
 
+# ---------------------------------- Example 02 ---------------------------------------
 print("BIGGER NUMBER")
 
 
@@ -41,6 +43,7 @@ def biggerNumber(number1, number2):
 biggerNumber(18, 332)
 print()
 
+# ---------------------------------- Example 03 ---------------------------------------
 print("CHOOSE YOUR PIZZA")
 topping1 = input("Name a pizza topping: ")
 topping2 = input("Name a second pizza topping: ")
@@ -58,9 +61,11 @@ def pizza_order(topping1, topping2):
 pizza_order(topping1, topping2)
 print()
 
+# ---------------------------------- Exercise 01 - form I ---------------------------------------
+import random
+
 print("INFINITY DICE 🎲")
 sides = int(input("How many sides?: "))
-import random
 
 number = random.randint(1, sides)
 print("You rolled", number, "\n")
@@ -72,9 +77,32 @@ while True:
     else:
         break
 
+# ---------------------------------- Exercise 01 - form II ---------------------------------------
+import random
+
+print("INFINITY DICE 🎲")
+sides = int(input("How many sides?: "))
+isTheFirstTime = True
+
+while True:
+    roll = ""
+    if isTheFirstTime:
+        roll = input("Do you want to roll? ")
+        isTheFirstTime = False
+    else:
+        roll = input("Do you want to roll again? ")
+
+    if roll == "yes":
+        number = random.randint(1, sides)
+        print("You rolled", number, "\n")
+    else:
+        break
+
+# ---------------------------------- Exercise 01 - form III ---------------------------------------
+import random
+
 print("INFINITY DICE 🎲 \n")
 sides = int(input("How many sides?: "))
-import random
 
 played = "yes"
 
