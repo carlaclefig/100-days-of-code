@@ -1,7 +1,9 @@
+# ---------------------------------- Example 01 ---------------------------------------
+import random
+
+
 # A subroutine is defined by: def variable():
 def rollDice():
-    import random
-
     dice = random.randint(1, 6)
     print("You rolled", dice)
 
@@ -10,12 +12,16 @@ for i in range(5):
     # Note that when you call the subroutine, you need to ensure you do NOT indent.
     rollDice()
 
+# ---------------------------------- Example 02 ---------------------------------------
+
 
 def MyName():
     print("My Name is David")
 
 
 MyName()
+
+# ---------------------------------- Example 03 ---------------------------------------
 
 
 def countToFive():
@@ -24,6 +30,8 @@ def countToFive():
 
 
 countToFive()
+
+# # ---------------------------------- Exercise 01 ---------------------------------------
 
 
 print("REPLIT LOGIN SYSTEM\n")
@@ -42,3 +50,35 @@ def login():
 
 
 login()
+
+## ---------------------------------- Exercise 02 ---------------------------------------
+
+# Calculate the double of numbers between 1 and 100
+
+
+def double(number):
+    result = number * 2
+    return result
+
+
+def triple(number):
+    result = number * 3
+    return result
+
+
+def print_double(number):
+    result = number * 2
+    print(result)
+
+
+for i in range(1, 100):
+    tmp_result = double(i)
+    print(tmp_result)
+
+
+level = double(8) + double(3)
+
+print(double(8))
+print(print_double(8))
+
+print(triple(double(3)))
